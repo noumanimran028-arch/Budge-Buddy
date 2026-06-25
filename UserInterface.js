@@ -38,7 +38,7 @@
 ];
 for(let i = 0; i < categories.length; i++){
     content += `
-        <a href="NestedObjects.html?id=${i + 1}">
+        <a href="Budget_Buddy_Brain.html?id=${i + 1}">
             <div class="Boxes">
                 <img src="${categories[i].img}" alt="${categories[i].title}">
                 <h3>${categories[i].title}</h3>
