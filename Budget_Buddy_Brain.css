@@ -1,0 +1,288 @@
+
+            body {
+                min-height: 100vh;
+                background-image: url("https://i.pinimg.com/736x/1e/02/ba/1e02ba91b6b4be1abba0cc005a78f1b9.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                font-family: Arial, sans-serif;
+                color: #ffffff;
+
+                backdrop-filter: blur(22px);
+                -webkit-backdrop-filter: blur(22px);
+
+                border-radius: 22px;
+                box-shadow:
+                    0 0 10px rgba(255, 255, 255, 0.8),
+                    inset 0 0 20px rgba(255, 255, 255, 0.05);
+
+                margin: 4px 20px 5px 20px;
+                overflow-x: hidden;
+            }
+
+            .container {
+                position: relative;
+                z-index: 1;
+                min-height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding: 20px;
+            }
+
+            .con-son {
+                width: 100%;
+                max-width: 424px;
+                padding: 35px;
+                border-radius: 24px;
+
+                background: rgba(255, 255, 255, 0.08);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+
+                backdrop-filter: blur(18px);
+                -webkit-backdrop-filter: blur(18px);
+
+                box-shadow:
+                    0 10px 30px rgba(0, 0, 0, 0.35),
+                    0 0 20px rgba(37, 99, 235, 0.15),
+                    inset 0 0 15px rgba(255, 255, 255, 0.05);
+
+                transition: all 0.3s ease;
+            }
+
+            .con-son:hover {
+                transform: translateY(-2px);
+                box-shadow:
+                    0 15px 35px rgba(0, 0, 0, 0.4),
+                    0 0 25px rgba(37, 99, 235, 0.2);
+            }
+
+            .input-group {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            input {
+                width: 100%;
+                padding: 14px 10px;
+                box-sizing: border-box;
+
+                background: rgba(255, 255, 255, 0.08);
+                color: white;
+
+                border: 1px solid rgba(147, 197, 253, 0.35);
+                border-radius: 12px;
+
+                outline: none;
+                transition: all 0.3s ease;
+            }
+
+            input::placeholder {
+                color: rgba(255, 255, 255, 0.65);
+            }
+
+            input:focus {
+                border-color: #60a5fa;
+                box-shadow:
+                    0 0 15px rgba(96, 165, 250, 0.45),
+                    0 0 5px rgba(255, 255, 255, 0.2);
+
+                background: rgba(255, 255, 255, 0.12);
+            }
+
+            .btn1,
+            .btn2,
+            .btn3,
+            .btn4,
+            .btn5 {
+                width: 100%;
+                padding: 13px;
+
+                border: none;
+                border-radius: 12px;
+
+                background: linear-gradient(135deg, #ab25eb, #3f30ff);
+
+                color: white;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+
+                transition: all 0.3s ease;
+
+                box-shadow:
+                    0 4px 12px rgba(63, 48, 255, 0.35),
+                    0 0 10px rgba(171, 37, 235, 0.2);
+            }
+
+            .btn1:hover,
+            .btn2:hover,
+            .btn3:hover,
+            .btn4:hover,
+            .btn5:hover {
+                transform: translateY(-2px);
+
+                box-shadow:
+                    0 8px 18px rgba(60, 187, 255, 0.28),
+                    0 0 20px rgba(171, 37, 235, 0.3);
+            }
+
+            .btn1:active,
+            .btn2:active,
+            .btn3:active,
+            .btn4:active,
+            .btn5:active {
+                transform: scale(0.98);
+            }
+
+            /*Display css*/
+
+            #displayBudget,
+            #displayExpense {
+                display: none;
+                flex-direction: column;
+
+                background: rgba(167, 53, 255, 0.17);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                height: auto;
+
+                border-radius: 10px;
+                padding: 0px 0px 0px 6px;
+                color:#73ff73;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                box-shadow: 0 0 10px rgba(223, 177, 255, 0.2);
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            /*Errors display Css*/
+
+            #budgetError,
+            #expenseError {
+                display: none;
+                flex-direction: column;
+
+                /*background: rgba(167, 53, 255, 0.17);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+
+                border-radius: 10px;
+                padding: 8px 0px 8px 6px;
+*/
+                color: #ff5065;
+                text-shadow: 0px 0px 10px #ffb1b1;
+                font-size:16px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            #Show {
+                display: none;
+                flex-direction: column;
+
+                background: rgba(167, 53, 255, 0.17);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+
+                border-radius: 10px;
+                padding: 0px 0px 0px 6px;
+                color: #73ff73;
+                text-shadow: 0px 0px 10px #73ff73;
+
+                border: 1px solid rgba(136, 233, 254, 0.15);
+                width: 100%;
+                box-sizing: border-box;
+            }
+            #displayRemain {
+                display: none;
+                flex-direction: column;
+
+                background: rgba(167, 53, 255, 0.17);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+
+                width: 100%;
+                height: auto;
+
+                border-radius: 10px;
+                padding: 0px 0px 0px 6px;
+                color:#73ff73;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                box-shadow: 0 0 10px rgba(223, 177, 255, 0.2);
+            }
+            /* Mobile Devices */
+            @media screen and (max-width: 480px) {
+                body {
+                    margin: 0;
+                    border-radius: 0;
+                    min-height: 100vh;
+                }
+
+                .container {
+                    padding: 15px;
+                }
+
+                .con-son {
+                    width: 100%;
+                    max-width: 100%;
+                    padding: 20px;
+                    border-radius: 18px;
+                }
+
+                .input-group {
+                    gap: 30px;
+                }
+
+                input {
+                    padding: 12px;
+                    font-size: 14px;
+                    color: white;
+                }
+
+                .btn1,
+                .btn2,
+                .btn3,
+                .btn4,
+                .btn5 {
+                    padding: 12px;
+                    font-size: 14px;
+                }
+
+                #displayBudget,
+                #displayExpense,
+                #budgetError,
+                #expenseError,
+                #Show {
+                    font-size: 14px;
+                    padding: 8px;
+                }
+            }
+
+            /* Tablets */
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+                .container {
+                    padding: 20px;
+                }
+
+                .con-son {
+                    max-width: 500px;
+                    padding: 30px;
+                }
+
+                input {
+                    font-size: 15px;
+                    color: white;
+                }
+
+                .btn1,
+                .btn2,
+                .btn3,
+                .btn4,
+                .btn5 {
+                    font-size: 15px;
+                }
+            }
