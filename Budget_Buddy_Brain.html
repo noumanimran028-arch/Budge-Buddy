@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="Budget_Buddy_Brain.css">
+        <title>Page_TO_Save_Expenses</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="con-son">
+                <div class="input-group">
+                    <input id="budgetInput" type="number" placeholder="Set your budget..." />
+                    <div id="budgetError"></div>
+                    <div id="displayBudget"></div>
+                    <button class="btn1" onclick="saveBudget()">Save Budget</button>
+                    <input id="expenseInput" type="number" placeholder="Set your Expense..." />
+                    <div id="expenseError"></div>
+                    <div id="displayExpense"></div>
+                    <button class="btn2" onclick="ExpenseSave()">Save Expense</button>
+                    <button class="btn5" onclick="remove()">Reset expense</button>
+                    <div id="displayRemain"></div>
+                    <button class="btn3" onclick="Show_Past_Data()">Past data</button>
+                    <div id="Show"></div>
+                    <button class="btn3" onclick="hide()">Hide</button>
+                </div>
+            </div>
+        </div>
+        <script src = "Budget_Buddy_Brain.js"></script>
+    </body>
+</html>
